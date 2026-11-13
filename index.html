@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="تك زون - متجر إلكتروني للأجهزة والإلكترونيات">
+  <title>TECH ZONE | تك زون للإلكترونيات</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topbar">🚚 توصيل لجميع المحافظات • ضمان على المنتجات • خدمة عملاء مميزة</div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="الصفحة الرئيسية"><span class="brand-mark">TZ</span><span>TECH <b>ZONE</b><small>عالم التقنية بين يديك</small></span></a>
+    <form class="search" id="searchForm"><input id="searchInput" type="search" placeholder="ابحث عن هاتف، لابتوب، سماعة..." aria-label="ابحث عن المنتجات"><button aria-label="بحث">⌕</button></form>
+    <div class="header-actions">
+      <button class="icon-btn" id="accountBtn" title="حسابي">♙ <span>حسابي</span></button>
+      <button class="icon-btn cart-trigger" id="cartOpen" title="سلة المشتريات">🛒 <span>السلة</span><i id="cartCount">0</i></button>
+    </div>
+  </header>
+  <nav class="main-nav">
+    <a href="#home" class="active">الرئيسية</a><a href="#categories">الأقسام</a><a href="#products">المنتجات</a><a href="#offers">العروض</a><a href="#about">من نحن</a><a href="#contact">تواصل معنا</a>
+  </nav>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <span class="eyebrow">وجهتك الأولى للتقنية</span>
+        <h1>تقنية أفضل،<br><em>وحياة أسهل.</em></h1>
+        <p>اكتشف أحدث الأجهزة والإلكترونيات الأصلية بأسعار منافسة وخيارات تناسب احتياجاتك.</p>
+        <div class="hero-buttons"><a class="btn primary" href="#products">تسوق الآن <span>←</span></a><a class="btn ghost" href="#categories">استكشف الأقسام</a></div>
+        <div class="hero-points"><span>✓ منتجات مختارة</span><span>✓ دعم ومساعدة</span><span>✓ خيارات دفع عند الاستلام</span></div>
+      </div>
+      <div class="hero-art">
+        <div class="hero-glow"></div>
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1100&q=85" alt="أجهزة وتقنيات حديثة">
+        <div class="floating-tag"><b>TECH</b><span>كل ما تحتاجه في مكان واحد</span></div>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div><span>🚚</span><p><b>توصيل موثوق</b><small>إلى باب منزلك</small></p></div>
+      <div><span>🛡️</span><p><b>ضمان المنتجات</b><small>راحة بال عند الشراء</small></p></div>
+      <div><span>💬</span><p><b>دعم العملاء</b><small>نحن هنا لمساعدتك</small></p></div>
+      <div><span>💳</span><p><b>دفع مرن</b><small>خيارات تناسبك</small></p></div>
+    </section>
+
+    <section class="section" id="categories">
+      <div class="section-heading"><div><span class="eyebrow">تسوق حسب احتياجك</span><h2>أقسام المتجر</h2></div><p>اختر القسم الذي تبحث عنه</p></div>
+      <div class="category-grid" id="categoryGrid">
+        <button class="category-card" data-category="هواتف"><span class="cat-icon">📱</span><b>الهواتف</b><small>هواتف ذكية</small></button>
+        <button class="category-card" data-category="لابتوبات"><span class="cat-icon">💻</span><b>اللابتوبات</b><small>أجهزة الكمبيوتر</small></button>
+        <button class="category-card" data-category="سماعات"><span class="cat-icon">🎧</span><b>السماعات</b><small>صوت نقي</small></button>
+        <button class="category-card" data-category="ساعات"><span class="cat-icon">⌚</span><b>الساعات الذكية</b><small>تقنية على معصمك</small></button>
+        <button class="category-card" data-category="شاشات"><span class="cat-icon">🖥️</span><b>الشاشات</b><small>وضوح مذهل</small></button>
+        <button class="category-card" data-category="إكسسوارات"><span class="cat-icon">🔌</span><b>الإكسسوارات</b><small>كل المكملات</small></button>
+      </div>
+    </section>
+
+    <section class="offer-banner" id="offers">
+      <div><span class="eyebrow light">عروض TECH ZONE</span><h2>طوّر تجربتك التقنية اليوم</h2><p>اكتشف اختياراتنا المميزة لهذا الأسبوع.</p><a class="btn white" href="#products">اكتشف المنتجات ←</a></div>
+      <div class="offer-symbol">٪</div>
+    </section>
+
+    <section class="section" id="products">
+      <div class="section-heading products-heading"><div><span class="eyebrow">اختياراتنا لك</span><h2>منتجات مميزة</h2></div>
+        <div class="filters"><button class="filter active" data-filter="الكل">الكل</button><button class="filter" data-filter="هواتف">هواتف</button><button class="filter" data-filter="لابتوبات">لابتوبات</button><button class="filter" data-filter="سماعات">سماعات</button><button class="filter" data-filter="إكسسوارات">إكسسوارات</button></div>
+      </div>
+      <div class="results-line"><span id="resultsCount">نعرض لك منتجات مختارة</span><select id="sortSelect" aria-label="ترتيب المنتجات"><option value="default">الترتيب الافتراضي</option><option value="low">السعر: من الأقل للأعلى</option><option value="high">السعر: من الأعلى للأقل</option></select></div>
+      <div class="product-grid" id="productGrid"></div>
+      <p class="empty-state" id="emptyState" hidden>لم نعثر على منتجات مطابقة. جرّب كلمة بحث أخرى.</p>
+    </section>
+
+    <section class="newsletter">
+      <div><span class="eyebrow light">ابقَ على اطلاع</span><h2>لا تفوّت جديد التقنية</h2><p>سجل بريدك الإلكتروني لتصلك أخبار المنتجات والعروض.</p></div>
+      <form id="newsletterForm"><input type="email" id="newsletterEmail" placeholder="بريدك الإلكتروني" required><button class="btn primary">اشتراك</button></form>
+    </section>
+
+    <section class="section about-section" id="about"><div><span class="eyebrow">من نحن</span><h2>التقنية التي تستحقها</h2><p>TECH ZONE متجر إلكتروني تجريبي متخصص في الأجهزة والإلكترونيات. نهدف إلى تسهيل اكتشاف المنتجات ومقارنة الخيارات وطلب ما تحتاجه من مكان واحد.</p></div><div class="about-stat"><b>6+</b><span>أقسام متنوعة</span></div><div class="about-stat"><b>24/7</b><span>تصفح المتجر</span></div></section>
+  </main>
+
+  <footer id="contact">
+    <div class="footer-main"><div class="footer-brand"><a class="brand" href="#"><span class="brand-mark">TZ</span><span>TECH <b>ZONE</b><small>عالم التقنية بين يديك</small></span></a><p>كل ما تحتاجه من أجهزة وإلكترونيات في مكان واحد.</p></div>
+      <div><h3>روابط سريعة</h3><a href="#home">الرئيسية</a><a href="#products">المنتجات</a><a href="#offers">العروض</a></div>
+      <div><h3>خدمة العملاء</h3><a href="#contact">سياسة الاستبدال</a><a href="#contact">الأسئلة الشائعة</a><a href="#contact">تواصل معنا</a></div>
+      <div><h3>تواصل معنا</h3><p>📍 أضف عنوان المتجر هنا</p><p>☎ أضف رقم الهاتف هنا</p><p>✉ info@example.com</p><div class="socials"><a href="#" aria-label="فيسبوك">f</a><a href="#" aria-label="انستغرام">◎</a><a href="#" aria-label="واتساب">◉</a></div></div>
+    </div><div class="footer-bottom"><span>© <span id="year"></span> TECH ZONE. جميع الحقوق محفوظة.</span><span>صُمم بعناية لعشاق التقنية</span></div>
+  </footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="سلة المشتريات">
+    <div class="drawer-head"><h2>سلة المشتريات</h2><button id="cartClose" class="close-btn" aria-label="إغلاق">×</button></div>
+    <div id="cartItems" class="cart-items"><p class="cart-empty">سلتك فارغة حالياً 🛒</p></div>
+    <div class="cart-summary"><div><span>الإجمالي</span><b id="cartTotal">0 ر.س</b></div><button class="btn primary full" id="checkoutBtn">إتمام الطلب</button><small>الأسعار تجريبية وقابلة للتعديل من ملف JavaScript.</small></div>
+  </aside>
+
+  <dialog id="checkoutDialog" class="checkout-dialog"><form id="checkoutForm" method="dialog">
+    <div class="drawer-head"><h2>بيانات إتمام الطلب</h2><button type="button" class="close-btn" id="checkoutClose">×</button></div>
+    <label>الاسم الكامل<input name="name" required placeholder="اكتب اسمك"></label>
+    <label>رقم الهاتف<input name="phone" required type="tel" placeholder="رقم التواصل"></label>
+    <label>المدينة والعنوان<textarea name="address" required rows="3" placeholder="اكتب عنوان التوصيل بالتفصيل"></textarea></label>
+    <label>طريقة الدفع<select name="payment"><option>الدفع عند الاستلام</option><option>تحويل بنكي (يُفعّل بعد إضافة بيانات الحساب)</option></select></label>
+    <button class="btn primary full" type="submit">تأكيد الطلب التجريبي</button>
+    <small>هذا النموذج يحفظ الطلب على هذا المتصفح فقط، ولا يرسل طلباً فعلياً لصاحب المتجر.</small>
+  </form></dialog>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
